@@ -1,0 +1,90 @@
+.footer {
+  background: #fff;
+}
+
+.footer .boxContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .boxContainer .box h3 {
+  font-size: 2.5rem;
+  color: var(--black);
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer .boxContainer .box h3 .h3Icon {
+  color: var(--mainColor);
+}
+
+.footer .boxContainer .box a {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--lightColor);
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer .boxContainer .box a .cqIcon {
+  color: var(--mainColor);
+  margin-right: 0.9rem;
+}
+
+.footer .boxContainer .box a:hover .cqIcon {
+  margin-right: 2rem;
+}
+
+.footer .boxContainer .box p {
+  line-height: 1.8;
+  font-size: 1.5rem;
+  color: var(--lightColor);
+  padding: 1rem 0;
+}
+
+.footer .boxContainer .box .share {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.8rem;
+}
+.footer .boxContainer .box .share a {
+  line-height: 4rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  margin-left: 0.2rem;
+}
+
+.footer .boxContainer .box .share a:hover {
+  color: var(--mainColor);
+}
+
+.footer .boxContainer .box .email {
+  width: 100%;
+  margin: 0.7rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #eee;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+}
+
+.footer .credit {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color: var(--black);
+  border-top: var(--border);
+}
+
+.footer .credit a {
+  color: var(--mainColor);
+}

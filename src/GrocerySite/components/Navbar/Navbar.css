@@ -1,0 +1,337 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+  background: #fff;
+  box-shadow: var(--boxShadow);
+  z-index: 99999;
+}
+
+.header .logo {
+  width: 9%;
+}
+
+.header .logo img {
+  width: 100%;
+  height: auto;
+}
+
+.header .navtitle {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--mainColor);
+  font-family: "Mali", cursive;
+}
+
+.header .navbar {
+  display: flex;
+  justify-content: center;
+  width: 82%;
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  color: var(--black);
+}
+
+.header .navbar a:hover {
+  color: var(--mainColor);
+}
+
+.header .icons {
+  width: 9%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header .icons .icon {
+  font-size: 2rem;
+}
+
+.header .icons .icon:hover {
+  color: var(--mainColor);
+  cursor: pointer;
+}
+
+.header .searchForm {
+  position: absolute;
+  top: 110%;
+  right: -110%;
+  width: 50rem;
+  height: 5rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--boxShadow);
+}
+
+.header .searchForm.active {
+  right: 2rem;
+}
+
+.header .searchForm input {
+  height: 100%;
+  width: 100%;
+  padding: 0 1.5rem;
+  background: none;
+  text-transform: none;
+  font-size: 1.6rem;
+  color: var(--black);
+}
+
+.header .searchForm label {
+  font-size: 2.2rem;
+  padding-right: 1.5rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.header .searchForm label:hover {
+  color: var(--mainColor);
+}
+
+.header .shoppingCart {
+  position: absolute;
+  top: 110%;
+  right: -130%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--boxShadow);
+  width: 35rem;
+  background: #fff;
+}
+
+.header .shoppingCart.active {
+  right: 2rem;
+}
+
+.header .shoppingCart .times {
+  font-size: 2.5rem;
+
+  position: absolute;
+  right: 1.8rem;
+  top: 1.8rem;
+}
+
+.header .shoppingCart .times:hover {
+  color: var(--mainColor);
+  cursor: pointer;
+}
+
+.header .shoppingCart .boxContainer {
+  margin-top: 4.5rem;
+}
+
+.header .shoppingCart .box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  margin: 1rem 0;
+}
+
+.header .shoppingCart .box img {
+  height: 11rem;
+  width: 11rem;
+  object-fit: cover;
+}
+
+.header .shoppingCart .box .trash {
+  font-size: 2rem;
+  color: var(--lightColor);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+}
+
+.header .shoppingCart .box .trash:hover {
+  color: red;
+}
+
+.header .shoppingCart .box .content h3 {
+  font-size: 1.7rem;
+  padding-bottom: 1rem;
+  color: var(--black);
+}
+
+.header .shoppingCart .box .content span {
+  font-size: 1.6rem;
+  color: var(--lightColor);
+}
+
+.header .shoppingCart .box .content .quantity {
+  font-size: 1.6rem;
+  color: var(--lightColor);
+  padding-left: 1rem;
+}
+
+.header .shoppingCart .total {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  text-align: center;
+  color: var(--black);
+}
+
+.header .shoppingCart .btn {
+  display: block;
+  text-align: center;
+  margin: 1rem;
+}
+
+.header .loginForm {
+  position: absolute;
+  top: 110%;
+  right: -130%;
+  width: 30rem;
+  box-shadow: var(--boxShadow);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  text-align: center;
+}
+
+.header .loginForm.active {
+  right: 2rem;
+}
+
+.header .loginForm .times {
+  font-size: 2.5rem;
+  position: absolute;
+  right: 1.8rem;
+  top: 1.8rem;
+}
+
+.header .loginForm .times:hover {
+  cursor: pointer;
+  color: var(--mainColor);
+}
+
+.header .loginForm h3 {
+  margin-top: 4.5rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.header .loginForm .box {
+  margin: 0.7rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  background-color: #eee;
+  text-transform: none;
+  width: 100%;
+}
+
+.header .loginForm p {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+  color: var(--lightColor);
+}
+
+.header .loginForm p a {
+  color: var(--mainColor);
+  text-decoration: underline;
+}
+/* ================================ */
+
+@media (max-width: 991px) {
+  .header .logo {
+    width: 15%;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 110%;
+    right: -130%;
+    width: 30rem;
+    box-shadow: var(--boxShadow);
+    border-radius: 0.5rem;
+    background: #fff;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .header .navbar.showNav {
+    right: 2rem;
+  }
+
+  .header .navbar .times {
+    position: absolute;
+    top: 1.8rem;
+    right: 1.8rem;
+    font-size: 2.5rem;
+  }
+
+  .header .navbar .times:hover {
+    cursor: pointer;
+    color: var(--mainColor);
+  }
+
+  .header .navbar .navbox {
+    margin-top: 4.5rem;
+  }
+
+  .header .navbar a {
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+  }
+
+  .header .searchForm {
+    width: 90%;
+  }
+
+  .header .icons {
+    width: 15%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .logo {
+    width: 25%;
+  }
+  .header .icons {
+    width: 25%;
+    justify-content: flex-end;
+  }
+}
+
+/* ================================ */
+
+@media (max-width: 650px) {
+  .header .logo {
+    width: 25%;
+  }
+  .header .icons {
+    width: 50%;
+    justify-content: flex-end;
+  }
+}
+
+/* ================================ */
+
+@media (max-width: 410px) {
+  .header .logo {
+    width: 35%;
+  }
+
+  .header .icons {
+    width: 45%;
+    justify-content: flex-end;
+  }
+}
